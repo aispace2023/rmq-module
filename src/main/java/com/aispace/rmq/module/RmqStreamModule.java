@@ -19,12 +19,12 @@ public class RmqStreamModule extends RmqModule {
 
     private Object streamOffset = "next";
 
-    public RmqStreamModule(String host, String userName, String password) {
-        super(host, userName, password);
+    public RmqStreamModule(String host, String userName, String password, int bufferCount) {
+        super(host, userName, password, bufferCount);
     }
 
-    public RmqStreamModule(String host, String userName, String password, int port) {
-        super(host, userName, password, port);
+    public RmqStreamModule(String host, String userName, String password, int port, int bufferCount) {
+        super(host, userName, password, port, bufferCount);
     }
 
     public RmqStreamModule(String host, String userName, String password, int port, int qos, String streamOffset) {
